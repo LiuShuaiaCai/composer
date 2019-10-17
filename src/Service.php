@@ -1,5 +1,5 @@
 <?php
-namespace Composer\Test;
+namespace Test\Hello;
 // include_once 'vendor/autoload.php';
 
 // use Monolog\Logger;
