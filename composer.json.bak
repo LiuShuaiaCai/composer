@@ -1,0 +1,45 @@
+{
+    "name": "lsc/test",  // 包的名称（格式：供应商名称/项目名称）
+    "description": "this is a test composer package",
+    "version": "0.0.1", // 版本（非必须，并且建议忽略）
+    "type": "library", // 包的类型（library|project|metapackage|composer-plugin，默认：library）,仅在你需要一个自定义的安装逻辑时才使用它。建议忽略这个属性，采用默认的 library
+    "keywords": [
+        "test",
+        "composer"
+    ],   // 该包相关的关键词的数组。这些可用于搜索和过滤，可选
+    "homepage": "http://plan.mubiao.online",    // 该项目网站的 URL 地址，可选
+    "time": "2019-10-17", // 版本发布时间，必须符合 YYYY-MM-DD 或 YYYY-MM-DD HH:MM:SS 格式，可选
+    "license": "MIT", // 包的许可协议，可以是一个字符串，也可以是一个数组（包含多个协议），可选，但建议填写
+    "authors": [
+        {
+            "name": "lsc",
+            "email": "1252578541@qq.com",
+            "homepage": "http://blog.feifan.news",
+            "role": "main"
+        }
+    ],  // 包的作者，可选，建议填写
+    "support": {
+        "email": "support@example.org",
+        "issues": "http://issues.com",  // 跟踪问题的 URL 地址。
+        "forum": "", // 论坛地址
+        "wiki": "", // Wiki 地址
+        "source": "", // 网址浏览或者下载资源
+    },
+    // 必须的软件包列表，除非这些依赖被满足，否则不会完成安装
+    "require": {
+        "monolog/monolog":"1.0.0"
+    },
+    // 测试环境的包
+    "require-dev": {
+        "monolog/monolog":"1.0.0"
+    },
+    // 此列表中的包与当前包的这个版本冲突。它们将不允许同时被安装。
+    "conflict":{
+        "monolog/monolog": ">2.0,<=1.0.0"
+    },
+    // 建议安装的包，它们增强或能够与当前包良好的工作
+    "suggest": {
+        "monolog/monolog": "Allows more advanced logging of the application flow"
+    },
+    "autoload": 
+}

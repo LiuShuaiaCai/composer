@@ -1,0 +1,21 @@
+{
+    "name": "liushuaicai/composer",
+    "description": "this is composer backage",
+    "type": "library",
+    "require": {
+        "monolog/monolog": "^1.25"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lsc",
+            "email": "1252578541@qq.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload":{
+        "psr-4": {
+            "Composer\\test\\":"src/"
+        }
+    }
+}
