@@ -1,6 +1,6 @@
 <?php
 namespace Composer\Test;
-include_once 'vendor/autoload.php';
+// include_once 'vendor/autoload.php';
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
