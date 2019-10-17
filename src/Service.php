@@ -12,7 +12,7 @@ class Service
     public function __construct()
     {
         $log = new Logger('name');
-        $log->pushHandler(new StreamHandler(__DIR__'/logs/'.date('Y-m-d').'.log', Logger::WARNING));
+        $log->pushHandler(new StreamHandler(__DIR__.'/logs/'.date('Y-m-d').'.log', Logger::WARNING));
         $this->log = $log;
     }
 
